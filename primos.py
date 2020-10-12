@@ -7,7 +7,6 @@ app = Flask(__name__)
 @app.route('/')
 def nao_entre_em_panico():
 
-print('Esses são os 100 primeiros numeros primos: ')
 cont=0;
 numero = 2;
 
@@ -25,7 +24,7 @@ while (cont < 100):
 	numero += 1;
 
 
-    return primos
+    return numero
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
